@@ -1,0 +1,13 @@
+﻿@model List<CityModel>
+@{
+    ViewData["Title"] = "List of Westeros Cities";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<ul>
+@foreach(var item in Model)
+{
+    <li>@item.Name</li>
+}
+</ul>
